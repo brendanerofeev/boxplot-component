@@ -6,40 +6,38 @@ A React component for rendering horizontal box plots with customizable styles an
 
 ## Usage
 
-### Installation
+### Getting Started
 
-```bash
-npm install horizontal-box-plot
-```
+1. Clone this repository
+2. Run `npm install` to install dependencies
+3. Run `npm run dev` to start the development server
+4. View the example implementation at `http://localhost:5173`
 
-### Basic Usage
-
-```jsx
-import { HorizontalBoxPlot } from 'horizontal-box-plot';
-```
-
-### Basic Example
+### Implementation Example
 
 ```jsx
-import { HorizontalBoxPlot } from 'horizontal-box-plot';
+import { HorizontalBoxPlot } from './components/HorizontalBoxPlot';
+
 function App() {
-const data = {
-min: 10,
-q1: 20,
-median: 35,
-q3: 45,
-max: 60,
-mean: 33
-};
-return (
-<HorizontalBoxPlot
-data={data}
-width={400}
-height={100}
-color="#4287f5" // Primary color
-/>
-);
+  const data = {
+    min: 10,
+    q1: 20,
+    median: 35,
+    q3: 45,
+    max: 60,
+    mean: 33
+  };
+
+  return (
+    <HorizontalBoxPlot 
+      data={data}
+      width={400}
+      height={100}
+      color="#4287f5"  // Primary color
+    />
+  );
 }
+```
 
 ### Props
 
